@@ -87,6 +87,9 @@ aside a {
     text-transform: uppercase;
     font-weight: bold;
 }
+aside h2 {
+    color: var(--blanc);
+}
 aside a:hover {
     background-color: var(--corail);
     color: var(--noir);
@@ -103,6 +106,7 @@ aside a:hover {
 .page-active {
     font-weight: 600;
     background-color: var(--corail);
+    color: var(--noir);
 }
 
 /*---Accueil---*/
