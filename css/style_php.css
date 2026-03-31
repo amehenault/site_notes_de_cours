@@ -77,7 +77,7 @@ aside {
 }
 mark {
     background-color: var(--corail);
-    padding: 0 3px;
+    padding: 0 6px;
 }
 aside a {
     display: block;
