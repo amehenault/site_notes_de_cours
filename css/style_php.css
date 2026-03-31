@@ -83,12 +83,13 @@ aside a {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
-    color: var(--noir);
+    color: var(--blanc);
     text-transform: uppercase;
     font-weight: bold;
 }
 aside a:hover {
     background-color: var(--corail);
+    color: var(--noir)
     text-decoration: underline 3px;
 }
 .section-droite {
@@ -114,7 +115,7 @@ table {
 }
 th {
     background-color: var(--bleu);
-    color: rgb(0, 0, 0);
+    color: var(--blanc);
     text-align: center;
     border: 2px solid var(--noir);
     padding : 10px
