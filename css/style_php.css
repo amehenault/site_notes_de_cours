@@ -89,7 +89,7 @@ aside a {
 }
 aside a:hover {
     background-color: var(--corail);
-    color: var(--noir)
+    color: var(--noir);
     text-decoration: underline 3px;
 }
 .section-droite {
