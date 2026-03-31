@@ -1,16 +1,23 @@
 /*---CSS de base---*/
+:root {
+    --noir: #403c3c;
+    --blanc: #FFF9F3;
+}
 body {
     margin: 0px;
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: var(--blanc);
+    color: var(--noir);
 }
 main {
     flex: 1;
 }
 .menu {
-    background-color: #4cd3f5; 
+    background-color: var(--noir);
+    color: var(--blanc);
     padding: 10px 0;           
     width: 100%;
     display: flex;
@@ -18,7 +25,7 @@ main {
     gap: 15px;                 
 }
 .menu a {  
-    color: #000000;
+    color: var(--blanc);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -33,7 +40,8 @@ main {
     text-underline-offset: 5px; 
 }
 footer {
-    background-color: #4cd3f5;
+    background-color: var(--noir);
+    color: var(--blanc);
     font-family: sans-serif;
     padding: 10px;
     display: flex;
