@@ -1,60 +1,75 @@
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="fr">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/favicon.png" type="image/png">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+    <title>HTML - Notes de Cours</title>
+    <link rel="stylesheet" href="../../css/style_html.css">
+</head>
+<body>
     <header>
       <nav class="menu" aria-label="Menu principal">
-        <a href="index.html">Accueil</a>
+        <a href="../../index.html">Accueil</a>
         <a href="cours/php/index.html">PHP</a>
         <a href="cours/html/index.html">HTML</a>
         <a href="cours/css/index.html">CSS</a>
       </nav>
-
-
     </header>
-    <main>
-            <div class="sidebar">
-  <ul class="menu">
-    <li><a href="index.html">Accueil</a></li>
-    <li>
-      <a href="html.html">HTML</a>
-      <ul class="submenu">
-        <li><a href="head.html">Head</a></li>
-        <li><a href="body.html">Body</a></li>
-        <li><a href="parents-enfants.html">Parents-enfants</a></li>
-        <li><a href="fonctions.html">Fonctions</a></li>
-      </ul>
-    </li>
-  </ul>
-</div>
-      <div class="image">
-        <img src="images/banniere_accueil.png" alt="Notes de cours" class="banniere">
-      </div>
-      <section>
-        <div class="h1_accueil">
-          <h1>Let's go on est capable !</h1>
-        </div>
-        <div class="h2_accueil">
-          <h2>On va réussir !</h2>
-        </div>
-      </section>
-      <section class="sous-titre">
-        <h3>Les différentes choses dans le HTML:</h3>
-      </section>
 
-    
+    <section>
+        <h1 class="titleimportant">Notes pour HTML</h1>
+    </section>
+
+    <main class="container">
+        <aside>
+            <h2>Menu</h2>
+            <nav id="menu-sidebar">
+                <a href="index.html" class="page-active">Accueil</a>
+                <a href="head.html">Head</a>
+                <a href="body.html">Body</a>
+                <a href="parents-enfants.html">Parents-enfants</a>
+                <a href="fonctions.html">Fonctions</a>
+            </nav>
+        </aside>
+
+        <section class="section-contenu">
+            <h2>Les différentes choses dans le HTML</h2>
+            
+            <div class="bloc-texte">
+                <p>Le HTML (HyperText Markup Language) est le langage fondamental utilisé pour créer des pages web. Il fournit la structure et le contenu de la page, tandis que le CSS s'occupe de la présentation visuelle et le JavaScript ajoute l'interactivité.</p>
+                <p>Cette section de notes te permettra de comprendre les différentes balises HTML et comment les utiliser correctement pour structurer tes pages web.</p>
+            </div>
+
+            <h3>Les trois parties principales du HTML</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Partie</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;!DOCTYPE html&gt;</td>
+                        <td>Déclare le type de document et la version du HTML utilisée. Doit toujours être la première ligne de ton fichier HTML.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;head&gt;</td>
+                        <td>Contient les métadonnées et les informations invisibles de la page (titre, encodage, liens CSS, scripts, etc.). Consulte la page dédiée au head pour plus de détails.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;body&gt;</td>
+                        <td>Contient tout le contenu visible de la page (texte, images, vidéos, liens, etc.). Consulte la page dédiée au body pour plus de détails.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
-  </body>
-  <footer>
-    <p>&copy; <span id="year"></span> Copyright à Caroline Richard et Amélie Hénault ©.</p>
-  </footer>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Copyright à Amélie Hénault ©.</p>
+    </footer>
+    <script src="../../js/script.js"></script>
+</body>
 </html>

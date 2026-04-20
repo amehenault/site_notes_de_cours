@@ -1,95 +1,87 @@
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="fr">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/favicon.png" type="image/png">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+    <title>Body - HTML</title>
+    <link rel="stylesheet" href="../../css/style_html.css">
+</head>
+<body>
     <header>
       <nav class="menu" aria-label="Menu principal">
-        <a href="index.html">Accueil</a>
+        <a href="../../index.html">Accueil</a>
         <a href="cours/php/index.html">PHP</a>
         <a href="cours/html/index.html">HTML</a>
         <a href="cours/css/index.html">CSS</a>
       </nav>
     </header>
-    <main>
-        <div class="sidebar">
-            <ul class="menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li>
-                <a href="html.html">HTML</a>
-                    <ul class="submenu">
-                    <li><a href="head.html">Head</a></li>
-                    <li><a href="body.html">Body</a></li>
-                    <li><a href="parents-enfants.html">Parents-enfants</a></li>
-                    <li><a href="fonctions.html">Fonctions</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>        
-      <div class="image">
-        <img src="images/banniere_accueil.png" alt="Notes de cours" class="banniere">
-      </div>
-      <section>
-        <div class="h1_accueil">
-          <h1>Let's go on est capable !</h1>
-        </div>
-        <div class="h2_accueil">
-          <h2>On va réussir !</h2>
-        </div>
-      </section>
-      <section class="sous-titre">
-        <h3>Ce que nous retrouvons dans le body:</h3>
-      </section>
-      <section class="paragraphe">
-        Le body contient le contenu principal de la page, qui est affiché aux utilisateurs. Il peut inclure du texte, des images, des vidéos, des liens, des formulaires, et d'autres éléments interactifs. Le body est également utilisé pour structurer le contenu de la page à l'aide de balises telles que &lt;div&gt;, &lt;section&gt;, &lt;article&gt;, etc., ce qui permet d'organiser le contenu de manière logique et de faciliter la navigation pour les utilisateurs.
-    
-      </section>
-      <section class="tableau">
-        <h4>Tableau des éléments couramment utilisés dans le body:</h4>
-        <table>
-          <tr>
-            <th>Élément</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td>&lt;h1&gt; à &lt;h6&gt;</td>
-            <td>Balises de titre utilisées pour structurer le contenu en sections hiérarchiques, du plus important (&lt;h1&gt;) au moins important (&lt;h6&gt;).</td>
-          </tr>
-          <tr>
-            <td>&lt;p&gt;</td>
-            <td>Balise de paragraphe utilisée pour regrouper du texte en blocs distincts.</td>
-          </tr>
-          <tr>
-            <td>&lt;a href="URL"&gt;</td>
-            <td>Balise de lien utilisée pour créer des liens vers d'autres pages ou ressources.</td>
-          </tr>
-          <tr>
-            <td>&lt;img src="image.jpg" alt="Description de l'image"&gt;</td>
-            <td>Balise d'image utilisée pour afficher des images sur la page, avec un attribut alt pour fournir une description alternative pour les lecteurs d'écran et les moteurs de recherche.</td>
-          </tr>
-          <tr>
-            <td>&lt;div&gt;</td>
-            <td>Balise de division utilisée pour regrouper des éléments et appliquer des styles ou des scripts à un ensemble d'éléments.</td>
-          </tr>
-        </table>
-      </section>
-      <section class="paragraphe">
-        En plus de ces éléments couramment utilisés, le body peut également contenir d'autres éléments tels que des listes (&lt;ul&gt;, &lt;ol&gt;), des tableaux (&lt;table&gt;), des formulaires (&lt;form&gt;), et bien d'autres encore, en fonction des besoins spécifiques de la page. Il est important de structurer le contenu du body de manière logique et cohérente pour offrir une expérience utilisateur agréable et faciliter la navigation sur le site.
-      </section>
-      <section class="paragraphe">
-        *Nous allons voir les liens parents-enfants et des fonctions dans d'autres pages!*
-      </section>
-      </main>
-  </body>
-  <footer>
-    <p>&copy; <span id="year"></span> Copyright à Caroline Richard et Amélie Hénault ©.</p>
-  </footer>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+
+    <section>
+        <h1 class="titleimportant">Notes pour HTML</h1>
+    </section>
+
+    <main class="container">
+        <aside>
+            <h2>Menu</h2>
+            <nav id="menu-sidebar">
+                <a href="index.html">Accueil</a>
+                <a href="head.html">Head</a>
+                <a href="body.html" class="page-active">Body</a>
+                <a href="parents-enfants.html">Parents-enfants</a>
+                <a href="fonctions.html">Fonctions</a>
+            </nav>
+        </aside>
+
+        <section class="section-contenu">
+            <h2>Ce que nous retrouvons dans le body</h2>
+            
+            <div class="bloc-texte">
+                <p>Le body contient le contenu principal de la page, qui est affiché aux utilisateurs. Il peut inclure du texte, des images, des vidéos, des liens, des formulaires, et d'autres éléments interactifs. Le body est également utilisé pour structurer le contenu de la page à l'aide de balises telles que &lt;div&gt;, &lt;section&gt;, &lt;article&gt;, etc., ce qui permet d'organiser le contenu de manière logique et de faciliter la navigation pour les utilisateurs.</p>
+            </div>
+
+            <h3>Tableau des éléments couramment utilisés dans le body</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Élément</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;h1&gt; à &lt;h6&gt;</td>
+                        <td>Balises de titre utilisées pour structurer le contenu en sections hiérarchiques, du plus important (&lt;h1&gt;) au moins important (&lt;h6&gt;).</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>Balise de paragraphe utilisée pour regrouper du texte en blocs distincts.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;a href="URL"&gt;</td>
+                        <td>Balise de lien utilisée pour créer des liens vers d'autres pages ou ressources.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;img src="image.jpg" alt="Description de l'image"&gt;</td>
+                        <td>Balise d'image utilisée pour afficher des images sur la page, avec un attribut alt pour fournir une description alternative pour les lecteurs d'écran et les moteurs de recherche.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;div&gt;</td>
+                        <td>Balise de division utilisée pour regrouper des éléments et appliquer des styles ou des scripts à un ensemble d'éléments.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="bloc-texte">
+                <p>En plus de ces éléments couramment utilisés, le body peut également contenir d'autres éléments tels que des listes (&lt;ul&gt;, &lt;ol&gt;), des tableaux (&lt;table&gt;), des formulaires (&lt;form&gt;), et bien d'autres encore, en fonction des besoins spécifiques de la page. Il est important de structurer le contenu du body de manière logique et cohérente pour offrir une expérience utilisateur agréable et faciliter la navigation sur le site.</p>
+                <p><em>Nous allons voir les liens parents-enfants et des fonctions dans d'autres pages!</em></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Copyright à Amélie Hénault ©.</p>
+    </footer>
+    <script src="../../js/script.js"></script>
+</body>
 </html>
