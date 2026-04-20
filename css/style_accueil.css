@@ -62,13 +62,13 @@ footer {
 }
 
 .citation {
-    font-size: 20px;
+    font-size: 30px;
     margin: 20px 0;
     text-align: center;
 }
 
 .auteur-citation {
-    text-align: right !important;
+    text-align: right;
     margin-right: 30px;
     margin-top: 10px;
 }
