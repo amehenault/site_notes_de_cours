@@ -60,14 +60,11 @@ footer {
     font-size: 50px;
     margin-top: 20px;
 }
-.h2_accueil {
-    text-align: center;
-    margin: 0 30px;
-}
 
-.h2_accueil .citation {
-    font-size: 20px !important;
+.citation {
+    font-size: 20px;
     margin: 20px 0;
+    text-align: center;
 }
 
 .h2_accueil .auteur-citation {
