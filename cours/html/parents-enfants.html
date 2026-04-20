@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="index.html">Accueil</a>
+        <a href="cours/php/index.html">PHP</a>
+        <a href="cours/html/index.html">HTML</a>
+        <a href="cours/css/index.html">CSS</a>
+      </nav>
+    </header>
+    <main>
+        <div class="sidebar">
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li>
+                <a href="html.html">HTML</a>
+                    <ul class="submenu">
+                    <li><a href="head.html">Head</a></li>
+                    <li><a href="body.html">Body</a></li>
+                    <li><a href="parents-enfants.html">Parents-enfants</a></li>
+                    <li><a href="fonctions.html">Fonctions</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+      <div class="image">
+        <img src="images/banniere_accueil.png" alt="Notes de cours" class="banniere">
+      </div>
+      <section>
+        <div class="h1_accueil">
+          <h1>Let's go on est capable !</h1>
+        </div>
+        <div class="h2_accueil">
+          <h2>On va réussir !</h2>
+        </div>
+      </section>
+      <section class="sous-titre">
+        <h3>Les liens parents-enfants:</h3>
+      </section>
+      <section class="bloc-note">
+<h2>Structure principale</h2>
+
+<table class="tableau">
+<thead>
+<tr>
+<th>Balise</th>
+<th>Utilité</th>
+<th>Parents possibles</th>
+<th>Enfants possibles</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>&lt;html&gt;</td>
+<td>C'est la base du HTML Il faut absolument mettre dans chaque page les balises marquées comme cela : <"avec le mot"> ainsi que <br>
+  <"/avec le mot"></td>
+<td>Aucun</td>
+<td>head, body</td>
+</tr>
+
+<tr>
+<td>&lt;head&gt;</td>
+<td>Contient infos invisibles (meta, title, css). Ça fait le lien car sans cela, le document serait incomplet.</td>
+<td>html</td>
+<td>meta, title, link, script…</td>
+</tr>
+
+<tr>
+<td>&lt;body&gt;</td>
+<td>Contenu visible du site.</td>
+<td>html</td>
+<td>Toutes les balises visibles</td>
+</tr>
+
+<tr>
+<td>&lt;title&gt;</td>
+<td>Ce titre n'est pas visible sur la page, mais est utilisé dans l'onglet du navigateur. Donc nous devons toujours mettre un titre et selon la page, il sera différent. </td>
+<td>head</td>
+<td>texte uniquement</td>
+</tr>
+
+<tr>
+<td>&lt;meta&gt;</td>
+<td>Donne des informations au navigateur:
+<br>charset: encodage des caractères (ex: UTF-8).
+<br>viewport: contrôle l'affichage sur mobile.
+<br>description: résumé de la page pour les moteurs de recherche.</td>
+</td>
+<td>head</td>
+<td>Aucun</td>
+</tr>
+
+<tr>
+<td>&lt;link&gt;</td>
+<td>Ça sert à lier un fichier externe. Ex: un icône d'onglet, une police, le css, etc</td>
+<td>head</td>
+<td>Aucun</td>
+</tr>
+
+<tr>
+<td>&lt;script&gt;</td>
+<td>Javascript.</td>
+<td>head ou body</td>
+<td>JS ou vide</td>
+</tr>
+
+</tbody>
+</table>
+</section>
+<section class="bloc-note">
+<h2>Structure sémantique</h2>
+
+<table class="tableau">
+<thead>
+<tr>
+<th>Balise</th>
+<th>Utilité</th>
+<th>Parents possibles</th>
+<th>Enfants possibles</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>&lt;header&gt;</td>
+<td>En-tête d’une page/section.</td>
+<td>body, section, article</td>
+<td>titres, nav, img</td>
+</tr>
+
+<tr>
+<td>&lt;nav&gt;</td>
+<td>Menu de navigation.</td>
+<td>header, body, section</td>
+<td>a, ul, li</td>
+</tr>
+
+<tr>
+<td>&lt;main&gt;</td>
+<td>Contenu principal unique.</td>
+<td>body</td>
+<td>section, article, div</td>
+</tr>
+
+<tr>
+<td>&lt;section&gt;</td>
+<td>Regroupe contenu thématique.</td>
+<td>main, body, article</td>
+<td>titres, p, div, article</td>
+</tr>
+
+<tr>
+<td>&lt;article&gt;</td>
+<td>Contenu indépendant.</td>
+<td>main, section, body</td>
+<td>header, p, footer</td>
+</tr>
+
+<tr>
+<td>&lt;footer&gt;</td>
+<td>Pied de page.</td>
+<td>body, section, article</td>
+<td>p, liens</td>
+</tr>
+
+<tr>
+<td>&lt;aside&gt;</td>
+<td>Contenu secondaire (sidebar).</td>
+<td>body, section</td>
+<td>p, nav, liens</td>
+</tr>
+
+<tr>
+<td>&lt;div&gt;</td>
+<td>Bloc générique.</td>
+<td>Presque partout</td>
+<td>Presque tout</td>
+</tr>
+
+</tbody>
+</table>
+</section>
+<section class="bloc-note">
+<h2>Texte</h2>
+
+<table class="tableau">
+<thead>
+<tr>
+<th>Balise</th>
+<th>Utilité</th>
+<th>Parents possibles</th>
+<th>Enfants possibles</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>&lt;h1&gt; à &lt;h6&gt;</td>
+<td>Titres.</td>
+<td>body, section, article</td>
+<td>texte, span</td>
+</tr>
+
+<tr>
+<td>&lt;p&gt;</td>
+<td>Paragraphe.</td>
+<td>body, div, section</td>
+<td>a, span, strong</td>
+</tr>
+
+<tr>
+<td>&lt;br&gt;</td>
+<td>Saut de ligne.</td>
+<td>p, td, div</td>
+<td>Aucun</td>
+</tr>
+
+<tr>
+<td>&lt;strong&gt;</td>
+<td>Texte important (gras).</td>
+<td>p, li, span</td>
+<td>texte</td>
+</tr>
+
+<tr>
+<td>&lt;em&gt;</td>
+<td>Italique important.</td>
+<td>p, span</td>
+<td>texte</td>
+</tr>
+
+<tr>
+<td>&lt;span&gt;</td>
+<td>Inline pour styliser.</td>
+<td>p, li, td</td>
+<td>texte</td>
+</tr>
+
+</tbody>
+</table>
+</section>
+<section class="bloc-note">
+<h2>Liens et médias</h2>
+
+<table class="tableau">
+<thead>
+<tr>
+<th>Balise</th>
+<th>Utilité</th>
+<th>Parents possibles</th>
+<th>Enfants possibles</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>&lt;a&gt;</td>
+<td>Lien vers page ou section.</td>
+<td>p, li, nav, div</td>
+<td>texte, img</td>
+</tr>
+
+<tr>
+<td>&lt;img&gt;</td>
+<td>Afficher image.</td>
+<td>body, div, a</td>
+<td>Aucun</td>
+</tr>
+
+<tr>
+<td>&lt;figure&gt;</td>
+<td>Groupe image + légende.</td>
+<td>body, section</td>
+<td>img, figcaption</td>
+</tr>
+
+<tr>
+<td>&lt;figcaption&gt;</td>
+<td>Légende image.</td>
+<td>figure</td>
+<td>texte</td>
+</tr>
+
+</tbody>
+</table>
+</section>
+<section class="bloc-note">
+<h2>Listes</h2>
+
+<table class="tableau">
+<thead>
+<tr>
+<th>Balise</th>
+<th>Utilité</th>
+<th>Parents possibles</th>
+<th>Enfants possibles</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>&lt;ul&gt;</td>
+<td>Liste non ordonnée.</td>
+<td>body, nav, div</td>
+<td>li</td>
+</tr>
+
+<tr>
+<td>&lt;ol&gt;</td>
+<td>Liste numérotée.</td>
+<td>body, div</td>
+<td>li</td>
+</tr>
+
+<tr>
+<td>&lt;li&gt;</td>
+<td>Élément liste.</td>
+<td>ul, ol</td>
+<td>texte, a, img</td>
+</tr>
+
+</tbody>
+</table>
+</section>
+<section class="bloc-note">
+<h2>Tableaux</h2>
+
+<table class="tableau">
+<thead>
+<tr>
+<th>Balise</th>
+<th>Utilité</th>
+<th>Parents possibles</th>
+<th>Enfants possibles</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>&lt;table&gt;</td>
+<td>Créer tableau.</td>
+<td>div, body, section</td>
+<td>thead, tbody, tr</td>
+</tr>
+
+<tr>
+<td>&lt;thead&gt;</td>
+<td>En-tête tableau.</td>
+<td>table</td>
+<td>tr</td>
+</tr>
+
+<tr>
+<td>&lt;tbody&gt;</td>
+<td>Corps tableau.</td>
+<td>table</td>
+<td>tr</td>
+</tr>
+
+<tr>
+<td>&lt;tr&gt;</td>
+<td>Ligne.</td>
+<td>thead, tbody</td>
+<td>td, th</td>
+</tr>
+
+<tr>
+<td>&lt;td&gt;</td>
+<td>Cellule.</td>
+<td>tr</td>
+<td>texte, img, a</td>
+</tr>
+
+<tr>
+<td>&lt;th&gt;</td>
+<td>Cellule titre.</td>
+<td>tr</td>
+<td>texte</td>
+</tr>
+
+</tbody>
+</table>
+</section>
+    </main>
+  </body>
+  <footer>
+    <p>&copy; <span id="year"></span> Copyright à Caroline Richard et Amélie Hénault ©.</p>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</html>

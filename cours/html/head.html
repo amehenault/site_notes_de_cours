@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="menu" aria-label="Menu principal">
+        <a href="index.html">Accueil</a>
+        <a href="cours/php/index.html">PHP</a>
+        <a href="cours/html/index.html">HTML</a>
+        <a href="cours/css/index.html">CSS</a>
+      </nav>
+    </header>
+    <main>
+        <div class="sidebar">
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li>
+                <a href="html.html">HTML</a>
+                    <ul class="submenu">
+                    <li><a href="head.html">Head</a></li>
+                    <li><a href="body.html">Body</a></li>
+                    <li><a href="parents-enfants.html">Parents-enfants</a></li>
+                    <li><a href="fonctions.html">Fonctions</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+      <div class="image">
+        <img src="images/banniere_accueil.png" alt="Notes de cours" class="banniere">
+      </div>
+      <section>
+        <div class="h1_accueil">
+          <h1>Let's go on est capable !</h1>
+        </div>
+        <div class="h2_accueil">
+          <h2>On va réussir !</h2>
+        </div>
+      </section>
+      <section class="sous-titre">
+        <h3>Ce qui est important pour la section "head":</h3>
+      </section>
+      <section class="paragraphe">
+        Nous retrouvons dans le head des éléments qui ne sont pas affichés sur la page, mais qui sont importants pour le référencement et la structure de la page. Par exemple, les balises meta permettent de fournir des informations sur la page aux moteurs de recherche, tandis que les balises link permettent de lier des ressources externes telles que des feuilles de style CSS ou des fichiers JavaScript. Le head est également utilisé pour définir le titre de la page, qui s'affiche dans l'onglet du navigateur et est important pour le référencement.
+        <p>Dans la section head il faut retrouver certaines, certaines sont nécessaires, d'autres sont optionnelles. Nous allons voir cela dans les tableaux-ci dessous: </p>
+      </section>
+    <section class="tableau">
+      <h4>Tableau des éléments nécessaires dans le head:</h4>
+      <table>
+        <tr>
+          <th>Élément</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>&lt;title&gt;</td>
+          <td>Définit le titre de la page, qui s'affiche dans l'onglet du navigateur et est important pour le référencement.
+          <br>Il doit être unique pour chaque page et contenir des mots-clés pertinents pour améliorer le référencement.
+          <br><br>Exemple lié à notre site: Accueil du site, Cours de HTML, etc.</td>
+        </tr>
+        <tr>
+          <td>&lt;meta charset="UTF-8"&gt;</td>
+          <td>Indique l'encodage des caractères utilisé sur la page, ce qui est important pour l'affichage correct du texte.
+          <br><br>Il est recommandé d'utiliser UTF-8, qui prend en charge la plupart des caractères utilisés dans les langues du monde entier.</td>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</td>
+          <td>Permet de rendre la page responsive en ajustant la mise en page en fonction de la taille de l'écran.
+            <br><br>Il est essentiel pour garantir une bonne expérience utilisateur sur les appareils mobiles, en s'assurant que le contenu s'affiche correctement et est facile à lire.</td>
+          </td>
+        </tr>
+      </table>
+
+      <h4>Tableau des éléments optionnels dans le head:</h4>
+      <table>
+        <tr>
+          <th>Élément</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>&lt;link rel="stylesheet" href="style.css"&gt;</td>
+          <td>Liaison d'une feuille de style CSS externe pour styliser la page.
+          <br><br>Il permet de séparer le contenu (HTML) de la présentation (CSS), ce qui facilite la maintenance et la réutilisation du code. En utilisant une feuille de style externe, vous pouvez appliquer les mêmes styles à plusieurs pages de votre site, assurant ainsi une cohérence visuelle.</td>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;script src="script.js"&gt;&lt;/script&gt;</td>
+          <td>Liaison d'un fichier JavaScript externe pour ajouter des fonctionnalités à la page.
+          <br><br>Il permet d'ajouter des interactions et des fonctionnalités dynamiques à votre site, telles que des animations, des formulaires interactifs, ou des mises à jour de contenu en temps réel. En utilisant un fichier JavaScript externe, vous pouvez également réutiliser le même code sur plusieurs pages, ce qui facilite la maintenance et l'organisation de votre projet.</td>
+          </td>
+        </tr>
+        <tr>
+          <td>&lt;meta name="description" content="Description de la page"&gt;</td>
+          <td>Fournit une description de la page pour les moteurs de recherche, ce qui peut améliorer le référencement.
+          <br><br>Il est important de rédiger une description concise et pertinente qui inclut des mots-clés liés au contenu de la page, afin d'attirer l'attention des utilisateurs dans les résultats de recherche et d'améliorer le taux de clics.</td>
+          </td>
+        </tr>
+      </table>
+    </section>
+    </main>
+  </body>
+  <footer>
+    <p>&copy; <span id="year"></span> Copyright à Caroline Richard et Amélie Hénault ©.</p>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</html>
